@@ -7,3 +7,5 @@
 Jet::Jet() {
     numberOfEngines = 1;
 }
+
+Jet::~Jet() = default;
