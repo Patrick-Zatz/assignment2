@@ -6,6 +6,7 @@
 #define DRIVINGSIMULATOR_JET_H
 
 #include "PoweredVehicle.h"
+#include <cstdlib>
 
 class Jet : public PoweredVehicle {
 
