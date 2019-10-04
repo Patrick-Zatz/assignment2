@@ -6,6 +6,9 @@
 #define DRIVINGSIMULATOR_SKATEBOARD_H
 
 #include "Vehicle.h"
+#include <stdlib.h>
+#include <stdlib>
+#include <time.h>
 
 class Skateboard : public Vehicle {
 
