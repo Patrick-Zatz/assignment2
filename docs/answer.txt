@@ -1,0 +1,57 @@
+a) $ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+        docs/
+
+nothing added to commit but untracked files present
+
+patri@MSI MINGW64 ~/OneDrive/Desktop/Class/Fall 2019 Classes/Software Engineering/Homework2/assignment2 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Patrick-Zatz/assignment2.git
+   f4975e5..8e61590  master -> master
+
+b) 8 
+   git rev-list --all | wc -l
+   
+c) Wednesday September 25 18:13:30 2019 -0400
+   git log -- .gitignore
+   
+d) The first reason branches are used is for bug fixes are causing issues in main.
+   Working in a branch outside of main makes it to where main can still be used by users
+   for example, while the bug fixes are going on. Another reason why branches is so multiple
+   contexts can be worked on at the same time separate for the main. For example, I could be
+   working on updating a websites user interface while a team member could be adding a new
+   feature to the website; all while users can still use the website through main.
+   
+e) The difference between git log and git status are that git log will show you the commit logs for the
+   project while git status shows the working tree status which is paths that have differences. In short, 
+   the difference is that the output of git status does not show the commit history of the project.
+   
+f) git log --follow -- Vehicle.h
+
+g) git log --all --grep='file'
+
+h) I) Inheritance is where you have a parent class and a child class. The child class inherits all the member functions and member data from the parent. 
+	  
+  II) Polymorphism is where an object can take different forms, for instance, the child object, as discussed earlier, can take the form of a class for itself or its.
+	  
+ III) Encapsulation is putting functions with data, for example, which is more commonly called classes. It is used as a protection to hide this code and data 
+      from anything outside the class.
+	  
+i) The main difference between the "Dictator and Lieutenants" workflow and the "Integration manager" workflow is that in the integration manager 
+   workflow each developer makes pull and push to their own public repository but in the Dictator and Lieutenants workflow everyone makes pull 
+   from the blessed repository and push to the Lieutenants repository.
+  
+j) A team of 100 developers would benefit from using the Dictator and Lieutenants workflow because the Dictator gets to oversee all the 
+   work and has access to a lot of code multiple times before integrating/ pushing it. Also, in comparison to the Centralized workflow, 
+   each developer would have to merge each time another developer pushed their code.
