@@ -9,3 +9,7 @@ Jet::Jet() {
 }
 
 Jet::~Jet() = default;
+
+int Jet::getNumEngines() {
+    return numberOfEngines;
+}
